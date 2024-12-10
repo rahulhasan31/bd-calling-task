@@ -18,7 +18,10 @@ export default function CheckoutForm() {
               </h1>
               <form action="" className="mt-10 flex flex-col space-y-4">
                 <div>
-                  <label className="text-xs font-semibold text-gray-500">
+                  <label
+                    htmlFor="email"
+                    className="text-xs font-semibold text-gray-500"
+                  >
                     Email
                   </label>
                   <input
@@ -30,7 +33,10 @@ export default function CheckoutForm() {
                   />
                 </div>
                 <div className="relative">
-                  <label className="text-xs font-semibold text-gray-500">
+                  <label
+                    htmlFor="card-number"
+                    className="text-xs font-semibold text-gray-500"
+                  >
                     Card number
                   </label>
                   <input
@@ -42,7 +48,7 @@ export default function CheckoutForm() {
                   />
                   <img
                     src="/images/uQUFIfCYVYcLK0qVJF5Yw.png"
-                    alt=""
+                    alt="Card icon"
                     className="absolute bottom-3 right-3 max-h-4"
                   />
                 </div>
@@ -52,7 +58,9 @@ export default function CheckoutForm() {
                   </p>
                   <div className="mr-6 flex flex-wrap">
                     <div className="my-1">
-                      <label className="sr-only">Select expiration month</label>
+                      <label htmlFor="month" className="sr-only">
+                        Select expiration month
+                      </label>
                       <select
                         name="month"
                         id="month"
@@ -62,7 +70,9 @@ export default function CheckoutForm() {
                       </select>
                     </div>
                     <div className="my-1 ml-3 mr-6">
-                      <label className="sr-only">Select expiration year</label>
+                      <label htmlFor="year" className="sr-only">
+                        Select expiration year
+                      </label>
                       <select
                         name="year"
                         id="year"
@@ -72,7 +82,9 @@ export default function CheckoutForm() {
                       </select>
                     </div>
                     <div className="relative my-1">
-                      <label className="sr-only">Security code</label>
+                      <label htmlFor="security-code" className="sr-only">
+                        Security code
+                      </label>
                       <input
                         type="text"
                         id="security-code"
@@ -84,7 +96,9 @@ export default function CheckoutForm() {
                   </div>
                 </div>
                 <div>
-                  <label className="sr-only">Card name</label>
+                  <label htmlFor="card-name" className="sr-only">
+                    Card name
+                  </label>
                   <input
                     type="text"
                     id="card-name"
@@ -98,15 +112,15 @@ export default function CheckoutForm() {
           </div>
           <div className="relative col-span-full flex flex-col py-6 pl-8 pr-4 sm:py-12 lg:col-span-4 lg:top-10 lg:py-24 lg:right-10">
             <div>
-              <div className="absolute p-5 inset-0 h-[85%] w-full bg-white   opacity-95">
+              <div className="absolute p-5 inset-0 h-[85%] w-full bg-white opacity-95">
                 <div className="relative">
-                  <h1 className="text-2xl font-bold mb-2">Order Summery</h1>
-                  <ul className="space-y-5 ">
+                  <h1 className="text-2xl font-bold mb-2">Order Summary</h1>
+                  <ul className="space-y-5">
                     <li className="flex justify-between">
                       <div className="inline-flex">
                         <img
                           src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGhhaXIlMjBkcnllcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                          alt=""
+                          alt="Product Image"
                           className="max-h-16"
                         />
                         <div className="ml-3">
@@ -127,7 +141,7 @@ export default function CheckoutForm() {
                       <div className="inline-flex">
                         <img
                           src="https://images.unsplash.com/photo-1621607512214-68297480165e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGhhaXIlMjBkcnllcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                          alt=""
+                          alt="Product Image"
                           className="max-h-16"
                         />
                         <div className="ml-3">
@@ -159,7 +173,7 @@ export default function CheckoutForm() {
                     <Checkbox
                       color="warning"
                       className="text-white mb-3 mt-2 rounded-full"
-                      value="buenos-aires "
+                      value="buenos-aires"
                     >
                       Cash on Delivery
                     </Checkbox>
