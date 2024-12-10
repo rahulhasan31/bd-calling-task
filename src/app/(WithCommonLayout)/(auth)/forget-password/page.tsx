@@ -5,13 +5,12 @@ import CommonAuthImage from "@/components/Ui/CommonAuthImage";
 
 import { Button } from "@nextui-org/button";
 import { useRouter } from "next/navigation";
-import React from "react";
 
 export default function ForgetPassword() {
   const router = useRouter();
 
   // This function handles form submission
-  const onSubmitHandle = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmitHandle = (e: any) => {
     e.preventDefault();
     router.push("/set-new-password");
   };
