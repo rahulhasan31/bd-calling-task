@@ -1,10 +1,10 @@
 "use client";
-import { EyeFilledIcon } from "@/components/Ui/EyeFilledIcon";
-import { EyeSlashFilledIcon } from "@/components/Ui/EyeSlashFilledIcon";
 import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/input";
-import Link from "next/link";
 import React, { useState } from "react";
+
+import { EyeSlashFilledIcon } from "@/components/Ui/EyeSlashFilledIcon";
+import { EyeFilledIcon } from "@/components/Ui/EyeFilledIcon";
 export default function ChangePass() {
   const [isVisible, setIsVisible] = useState(false);
   const [isVisibleAdd, setIsVisibleAdd] = useState(false);

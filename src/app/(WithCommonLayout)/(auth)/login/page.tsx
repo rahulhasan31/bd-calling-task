@@ -1,14 +1,14 @@
 "use client";
 
-import FXInput from "@/components/forms/FXInput";
-import CommonAuthImage from "@/components/Ui/CommonAuthImage";
-
-import { EyeFilledIcon } from "@/components/Ui/EyeFilledIcon";
-import { EyeSlashFilledIcon } from "@/components/Ui/EyeSlashFilledIcon";
 import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/input";
 import Link from "next/link";
 import React, { useState } from "react";
+
+import FXInput from "@/components/forms/FXInput";
+import CommonAuthImage from "@/components/Ui/CommonAuthImage";
+import { EyeFilledIcon } from "@/components/Ui/EyeFilledIcon";
+import { EyeSlashFilledIcon } from "@/components/Ui/EyeSlashFilledIcon";
 
 export default function Login() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +29,7 @@ export default function Login() {
           <div className="text-center text-3xl font-bold mb-2">Sing In </div>
 
           <form>
-            <FXInput className="lg:w-full mb-5" name="email" label="email" />
+            <FXInput className="lg:w-full mb-5" label="email" name="email" />
             <Input
               className="lg:w-full  "
               endContent={

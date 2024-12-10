@@ -47,9 +47,9 @@ export default function CustomerFeedback() {
             <div className="flex flex-col lg:flex-col space-y-4 lg:space-y-0 lg:space-x-4">
               <div className="flex items-center space-x-4">
                 <img
-                  src={review.avatar}
                   alt={review.name}
                   className="w-12 h-12 lg:ms-5 rounded-full border border-gray-600"
+                  src={review.avatar}
                 />
                 <div>
                   <h3 className="text-lg font-semibold">{review.name}</h3>

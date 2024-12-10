@@ -1,5 +1,3 @@
-import { Card, CardBody } from "@nextui-org/card";
-import Image from "next/image";
 import React from "react";
 
 export const ItemData = [

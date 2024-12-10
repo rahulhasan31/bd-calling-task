@@ -28,9 +28,9 @@ export default function OrderDetails() {
 
           <div className="hidden lg:-top-24 lg:relative lg:block">
             <img
+              alt="Divider Line"
               className="h-[300px] relative"
               src="/line.png"
-              alt="Divider Line"
             />
           </div>
 

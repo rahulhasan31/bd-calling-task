@@ -1,13 +1,12 @@
-import { Card, CardBody, CardHeader } from "@nextui-org/card";
+import { Card, CardBody } from "@nextui-org/card";
 import Image from "next/image";
-
 import { FaStar } from "react-icons/fa6";
-
 import { Button } from "@nextui-org/button";
-import { data } from "@/components/Restaurants/TopRestaurant";
 import { CiLocationOn } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import Link from "next/link";
+
+import { data } from "@/components/Restaurants/TopRestaurant";
 
 export default function Restaurant() {
   return (
@@ -38,9 +37,9 @@ export default function Restaurant() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl max-sm:w-full"
+                  height={100}
                   src={card?.imageUrl}
                   width={1000}
-                  height={100}
                 />
               </CardBody>
               <CardBody className="">
@@ -61,8 +60,8 @@ export default function Restaurant() {
                 <Link href={"/restaurant/72452"}>
                   {" "}
                   <Button
-                    variant="shadow"
                     className="mt-2 text-white bg-green-500"
+                    variant="shadow"
                   >
                     Visit
                   </Button>

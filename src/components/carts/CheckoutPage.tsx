@@ -2,10 +2,12 @@
 import { Checkbox } from "@nextui-org/checkbox";
 import { Divider } from "@nextui-org/divider";
 import { useDisclosure } from "@nextui-org/modal";
+
 import OrderModal from "../Modal/OrderModal";
 
 export default function CheckoutForm() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
     <div>
       <div className="relative mx-auto w-full bg-gradient-to-bl bg-default-100">
@@ -14,42 +16,42 @@ export default function CheckoutForm() {
             <div className="mx-auto w-full max-w-lg">
               <h1 className="relative text-2xl font-medium text-gray-700 sm:text-3xl">
                 Billing Information
-                <span className="mt-2 block h-1 w-10 bg-orange-600 sm:w-20"></span>
+                <span className="mt-2 block h-1 w-10 bg-orange-600 sm:w-20" />
               </h1>
               <form action="" className="mt-10 flex flex-col space-y-4">
                 <div>
                   <label
-                    htmlFor="email"
                     className="text-xs font-semibold text-gray-500"
+                    htmlFor="email"
                   >
                     Email
                   </label>
                   <input
-                    type="email"
+                    className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
                     id="email"
                     name="email"
                     placeholder="john.capler@fang.com"
-                    className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                    type="email"
                   />
                 </div>
                 <div className="relative">
                   <label
-                    htmlFor="card-number"
                     className="text-xs font-semibold text-gray-500"
+                    htmlFor="card-number"
                   >
                     Card number
                   </label>
                   <input
-                    type="text"
+                    className="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
                     id="card-number"
                     name="card-number"
                     placeholder="1234-5678-XXXX-XXXX"
-                    className="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                    type="text"
                   />
                   <img
-                    src="/images/uQUFIfCYVYcLK0qVJF5Yw.png"
                     alt="Card icon"
                     className="absolute bottom-3 right-3 max-h-4"
+                    src="/images/uQUFIfCYVYcLK0qVJF5Yw.png"
                   />
                 </div>
                 <div>
@@ -58,53 +60,53 @@ export default function CheckoutForm() {
                   </p>
                   <div className="mr-6 flex flex-wrap">
                     <div className="my-1">
-                      <label htmlFor="month" className="sr-only">
+                      <label className="sr-only" htmlFor="month">
                         Select expiration month
                       </label>
                       <select
-                        name="month"
-                        id="month"
                         className="cursor-pointer rounded border-gray-300 bg-gray-50 py-3 px-2 text-sm shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                        id="month"
+                        name="month"
                       >
                         <option value="">Month</option>
                       </select>
                     </div>
                     <div className="my-1 ml-3 mr-6">
-                      <label htmlFor="year" className="sr-only">
+                      <label className="sr-only" htmlFor="year">
                         Select expiration year
                       </label>
                       <select
-                        name="year"
-                        id="year"
                         className="cursor-pointer rounded border-gray-300 bg-gray-50 py-3 px-2 text-sm shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                        id="year"
+                        name="year"
                       >
                         <option value="">Year</option>
                       </select>
                     </div>
                     <div className="relative my-1">
-                      <label htmlFor="security-code" className="sr-only">
+                      <label className="sr-only" htmlFor="security-code">
                         Security code
                       </label>
                       <input
-                        type="text"
+                        className="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
                         id="security-code"
                         name="security-code"
                         placeholder="Security code"
-                        className="block w-36 rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                        type="text"
                       />
                     </div>
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="card-name" className="sr-only">
+                  <label className="sr-only" htmlFor="card-name">
                     Card name
                   </label>
                   <input
-                    type="text"
+                    className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
                     id="card-name"
                     name="card-name"
                     placeholder="Name on the card"
-                    className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                    type="text"
                   />
                 </div>
               </form>
@@ -119,9 +121,9 @@ export default function CheckoutForm() {
                     <li className="flex justify-between">
                       <div className="inline-flex">
                         <img
-                          src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGhhaXIlMjBkcnllcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                           alt="Product Image"
                           className="max-h-16"
+                          src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGhhaXIlMjBkcnllcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                         />
                         <div className="ml-3">
                           <p className="text-base font-semibold text-black">
@@ -140,9 +142,9 @@ export default function CheckoutForm() {
                     <li className="flex justify-between">
                       <div className="inline-flex">
                         <img
-                          src="https://images.unsplash.com/photo-1621607512214-68297480165e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGhhaXIlMjBkcnllcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                           alt="Product Image"
                           className="max-h-16"
+                          src="https://images.unsplash.com/photo-1621607512214-68297480165e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGhhaXIlMjBkcnllcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                         />
                         <div className="ml-3">
                           <p className="text-base font-semibold text-black">
@@ -158,7 +160,7 @@ export default function CheckoutForm() {
                       </p>
                     </li>
                   </ul>
-                  <div className="my-5 h-0.5 w-full bg-white bg-opacity-30"></div>
+                  <div className="my-5 h-0.5 w-full bg-white bg-opacity-30" />
                   <Divider className="my-4" />
                   <div className="space-y-2">
                     <p className="flex text-black justify-between text-lg font-bold ">
@@ -171,8 +173,8 @@ export default function CheckoutForm() {
                   </div>
                   <div className="flex flex-col">
                     <Checkbox
-                      color="warning"
                       className="text-white mb-3 mt-2 rounded-full"
+                      color="warning"
                       value="buenos-aires"
                     >
                       Cash on Delivery
@@ -181,8 +183,8 @@ export default function CheckoutForm() {
                     <Checkbox value="buenos-aires">Paypal</Checkbox>
 
                     <OrderModal
-                      onOpen={onOpen}
                       isOpen={isOpen}
+                      onOpen={onOpen}
                       onOpenChange={onOpenChange}
                     />
                   </div>

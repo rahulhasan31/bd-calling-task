@@ -14,10 +14,10 @@ const Billing = () => {
                     First Name
                   </label>
                   <input
-                    type="text"
-                    name="credit-expiry"
                     className="lg:w-52 max-sm:w-full rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                    name="credit-expiry"
                     placeholder="Dianne"
+                    type="text"
                   />
                 </div>
                 <div className="lg:flex max-sm:w-full lg:flex-col">
@@ -25,10 +25,10 @@ const Billing = () => {
                     Last Name
                   </label>
                   <input
-                    type="text"
-                    name="credit-expiry"
                     className="lg:w-52 w-full rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                    name="credit-expiry"
                     placeholder="Dianne"
+                    type="text"
                   />
                 </div>
 
@@ -37,10 +37,10 @@ const Billing = () => {
                     Company Name (optional)
                   </label>
                   <input
-                    type="text"
-                    name="credit-expiry"
                     className="lg:w-52 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                    name="credit-expiry"
                     placeholder="Zakirsoft"
+                    type="text"
                   />
                 </div>
               </div>
@@ -48,26 +48,26 @@ const Billing = () => {
             <label className="mt-4 mb-2 block text-sm font-medium">Email</label>
             <div className="relative">
               <input
-                type="text"
+                className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 id="email"
                 name="email"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="your.email@gmail.com"
+                type="text"
               />
-              <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3"></div>
+              <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3" />
             </div>
             <label className="mt-4 mb-2 block text-sm font-medium">
               Card Holder
             </label>
             <div className="relative">
               <input
-                type="text"
+                className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 id="card-holder"
                 name="card-holder"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Your full name here"
+                type="text"
               />
-              <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3"></div>
+              <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3" />
             </div>
             <label className="mt-4 mb-2 block text-sm font-medium">
               Card Details
@@ -75,20 +75,20 @@ const Billing = () => {
             <div className="flex">
               <div className="relative w-7/12 flex-shrink-0">
                 <input
-                  type="text"
+                  className="w-full rounded-md border border-gray-200 px-2 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                   id="card-no"
                   name="card-no"
-                  className="w-full rounded-md border border-gray-200 px-2 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                   placeholder="xxxx-xxxx-xxxx-xxxx"
+                  type="text"
                 />
                 <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                   <svg
                     className="h-4 w-4 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
                     fill="currentColor"
+                    height="16"
                     viewBox="0 0 16 16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" />
                     <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
@@ -96,16 +96,16 @@ const Billing = () => {
                 </div>
               </div>
               <input
-                type="text"
-                name="credit-expiry"
                 className="w-full rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                name="credit-expiry"
                 placeholder="MM/YY"
+                type="text"
               />
               <input
-                type="text"
-                name="credit-cvc"
                 className="w-1/6 flex-shrink-0 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                name="credit-cvc"
                 placeholder="CVC"
+                type="text"
               />
             </div>
             <label className="mt-4 mb-2 block text-sm font-medium">
@@ -114,31 +114,31 @@ const Billing = () => {
             <div className="flex flex-col sm:flex-row">
               <div className="relative flex-shrink-0 sm:w-7/12">
                 <input
-                  type="text"
+                  className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                   id="billing-address"
                   name="billing-address"
-                  className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                   placeholder="Street Address"
+                  type="text"
                 />
                 <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                   <img
+                    alt=""
                     className="h-4 w-4 object-contain"
                     src="https://flagpack.xyz/_nuxt/4c829b6c0131de7162790d2f897a90fd.svg"
-                    alt=""
                   />
                 </div>
               </div>
               <select
-                name="billing-state"
                 className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                name="billing-state"
               >
                 <option value="State">State</option>
               </select>
               <input
-                type="text"
-                name="billing-zip"
                 className="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                name="billing-zip"
                 placeholder="ZIP"
+                type="text"
               />
             </div>
 

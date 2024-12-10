@@ -1,14 +1,12 @@
 "use client";
 
-import FXInput from "@/components/forms/FXInput";
-import CommonAuthImage from "@/components/Ui/CommonAuthImage";
-
-import { EyeFilledIcon } from "@/components/Ui/EyeFilledIcon";
-import { EyeSlashFilledIcon } from "@/components/Ui/EyeSlashFilledIcon";
 import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/input";
-import Link from "next/link";
 import React, { useState } from "react";
+
+import CommonAuthImage from "@/components/Ui/CommonAuthImage";
+import { EyeFilledIcon } from "@/components/Ui/EyeFilledIcon";
+import { EyeSlashFilledIcon } from "@/components/Ui/EyeSlashFilledIcon";
 
 export default function SetNewPassword() {
   const [isVisible, setIsVisible] = useState(false);

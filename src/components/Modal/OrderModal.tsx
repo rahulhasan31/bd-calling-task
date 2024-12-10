@@ -1,13 +1,6 @@
 import { Button } from "@nextui-org/button";
 import { Divider } from "@nextui-org/divider";
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  useDisclosure,
-} from "@nextui-org/modal";
+import { Modal, ModalBody, ModalContent, ModalHeader } from "@nextui-org/modal";
 import Image from "next/image";
 import React from "react";
 
@@ -32,16 +25,16 @@ export default function OrderModal({ isOpen, onOpen, onOpenChange }: any) {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1"></ModalHeader>
+              <ModalHeader className="flex flex-col gap-1" />
               <ModalBody>
                 <div className="flex flex-col justify-center items-center">
                   {" "}
                   <Image
+                    alt="img"
                     className="text-center"
-                    width={50}
                     height={50}
                     src="/suc.png"
-                    alt="img"
+                    width={50}
                   />
                   <p className="text-2xl font-semibold">Order Successfully</p>
                 </div>
@@ -52,11 +45,11 @@ export default function OrderModal({ isOpen, onOpen, onOpenChange }: any) {
                 </p>
                 <div className="flex justify-center">
                   <Image
+                    alt="img"
                     className="text-center "
-                    width={200}
                     height={100}
                     src="/scan.png"
-                    alt="img"
+                    width={200}
                   />
                 </div>
               </ModalBody>

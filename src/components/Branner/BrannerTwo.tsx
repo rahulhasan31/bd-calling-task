@@ -6,11 +6,11 @@ export default function BrannerTwo() {
     <div className="lg:flex gap-5 lg:justify-center bg-gradient-to-b bg-default-100 shadow-lg p-7">
       <div className="flex flex-col lg:flex-row gap-3 items-center text-center lg:text-left">
         <Image
+          alt="Discount Icon"
           className="w-auto h-auto"
-          width={100}
           height={100}
           src="/Group.png"
-          alt="Discount Icon"
+          width={100}
         />
         <div>
           <h1 className="font-bold text-lg">Free Delivery</h1>
@@ -19,11 +19,11 @@ export default function BrannerTwo() {
       </div>
       <div className="flex flex-col lg:flex-row gap-3 items-center text-center lg:text-left">
         <Image
+          alt="Discount Icon"
           className="w-auto h-auto"
-          width={100}
           height={100}
           src="/car.png"
-          alt="Discount Icon"
+          width={100}
         />
         <div>
           <h1 className="font-bold text-lg">Free Delivery</h1>
@@ -32,11 +32,11 @@ export default function BrannerTwo() {
       </div>
       <div className="flex flex-col lg:flex-row gap-3 items-center text-center lg:text-left">
         <Image
+          alt="Discount Icon"
           className="w-auto h-auto"
-          width={100}
           height={100}
           src="/h.png"
-          alt="Discount Icon"
+          width={100}
         />
         <div>
           <h1 className="font-bold text-lg">Great Support 24/7</h1>
@@ -45,11 +45,11 @@ export default function BrannerTwo() {
       </div>
       <div className="flex flex-col lg:flex-row gap-3 items-center text-center lg:text-left">
         <Image
+          alt="Discount Icon"
           className="w-auto h-auto"
-          width={100}
           height={100}
           src="/shield.png"
-          alt="Discount Icon"
+          width={100}
         />
         <div>
           <h1 className="font-bold text-lg">secure Payment</h1>

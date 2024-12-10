@@ -20,20 +20,20 @@ export default function ProductDetails() {
           {images.map((img, index) => (
             <img
               key={index}
-              src={img}
               alt={`Thumbnail ${index + 1}`}
-              onClick={() => setSelectedImage(img)}
               className={`w-16 h-16 border rounded cursor-pointer ${
                 selectedImage === img ? "border-green-500" : "border-gray-300"
               }`}
+              src={img}
+              onClick={() => setSelectedImage(img)}
             />
           ))}
         </div>
         <div className="border-2 border-green-400 rounded">
           <img
-            src={selectedImage}
             alt="Main Product"
             className="w-full h-auto max-h-[300px] lg:max-h-full"
+            src={selectedImage}
           />
         </div>
       </div>
@@ -72,15 +72,15 @@ export default function ProductDetails() {
         <div className="flex items-center gap-4">
           <div className="flex  items-center mt-6 space-x-4">
             <button
-              onClick={handleDecrement}
               className="px-3 py-1 text-lg font-semibold bg-gray-200 rounded hover:bg-gray-300"
+              onClick={handleDecrement}
             >
               -
             </button>
             <span className="text-lg font-semibold">{quantity}</span>
             <button
-              onClick={handleIncrement}
               className="px-3 py-1 text-lg font-semibold bg-gray-200 rounded hover:bg-gray-300"
+              onClick={handleIncrement}
             >
               +
             </button>

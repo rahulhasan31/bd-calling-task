@@ -1,12 +1,11 @@
 import { Metadata, Viewport } from "next";
-
 import clsx from "clsx";
+
 import "../../styles/globals.css";
 import { Providers } from "../lib/providers";
 
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 export const metadata: Metadata = {
   title: {
@@ -37,14 +36,12 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
-        <AntdRegistry>
-          <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-            {children}
-          </Providers>
-        </AntdRegistry>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+          {children}
+        </Providers>
       </body>
     </html>
   );

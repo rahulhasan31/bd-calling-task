@@ -7,29 +7,16 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { CiUser } from "react-icons/ci";
-
-import { Button } from "@nextui-org/button";
-import { Kbd } from "@nextui-org/kbd";
-
 import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
-import NextLink from "next/link";
 import clsx from "clsx";
 import { FaCartPlus } from "react-icons/fa6";
+import { LuUserRound } from "react-icons/lu";
+import Link from "next/link";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-  Logo,
-} from "@/components/icons";
-import { LuUserRound } from "react-icons/lu";
-import Link from "next/link";
+import { GithubIcon, SearchIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
@@ -57,12 +44,9 @@ export const Navbar = () => {
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <Link
-            className="flex justify-start items-center gap-1"
-            href="/"
-          ></Link>
+          <Link className="flex justify-start items-center gap-1" href="/" />
           <div>
-            <img className="h-10" alt="img" src="/i.png" />
+            <img alt="img" className="h-10" src="/i.png" />
           </div>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full">
@@ -95,14 +79,6 @@ export const Navbar = () => {
             <LuUserRound className="text-xl underline" />
           </Link>
         </NavbarItem>
-      </NavbarContent>
-
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
-        <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>

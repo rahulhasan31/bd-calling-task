@@ -1,5 +1,5 @@
 "use client";
-import { Card, CardBody, CardFooter } from "@nextui-org/card";
+import { Card } from "@nextui-org/card";
 import Image from "next/image";
 
 export default function ProductsSection() {
@@ -77,9 +77,9 @@ export default function ProductsSection() {
               <Image
                 alt="Card background"
                 className="w-full object-cover rounded-xl  max-sm:w-full"
+                height={100}
                 src={card?.imageUrl}
                 width={500}
-                height={100}
               />
             </Card>
             <div>

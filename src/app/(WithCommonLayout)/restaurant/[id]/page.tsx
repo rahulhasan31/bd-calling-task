@@ -1,8 +1,9 @@
+import { CiLocationOn } from "react-icons/ci";
+import { FaRegStar, FaStar } from "react-icons/fa6";
+
 import Items from "@/components/Items/Items";
 import ProductItems from "@/components/Products/ProductItems";
 import Carousel from "@/components/Restaurants/Carousel";
-import { CiLocationOn } from "react-icons/ci";
-import { FaRegStar, FaStar } from "react-icons/fa6";
 
 export default function SingleRestaurant() {
   return (

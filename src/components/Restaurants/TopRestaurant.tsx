@@ -1,7 +1,6 @@
-import { Card, CardBody, CardHeader } from "@nextui-org/card";
+import { Card, CardBody } from "@nextui-org/card";
 import Image from "next/image";
 import React from "react";
-
 import { FaStar } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
 import { Button } from "@nextui-org/button";
@@ -121,9 +120,9 @@ export default function TopRestaurant() {
                     <Image
                       alt="Card background"
                       className="object-cover rounded-xl max-sm:w-full"
+                      height={100}
                       src={card?.imageUrl}
                       width={1000}
-                      height={100}
                     />
                   </CardBody>
                   <CardBody className="">
@@ -145,8 +144,8 @@ export default function TopRestaurant() {
                     </h4>
 
                     <Button
-                      variant="shadow"
                       className="mt-2 text-white bg-green-500"
+                      variant="shadow"
                     >
                       Visit
                     </Button>

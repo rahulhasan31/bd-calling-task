@@ -41,9 +41,9 @@ export default function CartsSection() {
               <div className="flex flex-col min-[500px]:flex-row min-[500px]:items-center gap-5 py-6  border-b border-gray-200 group">
                 <div className="w-full md:max-w-[126px]">
                   <img
-                    src="https://pagedone.io/asset/uploads/1701162850.png"
                     alt="perfume bottle image"
                     className="mx-auto rounded-xl object-cover"
+                    src="https://pagedone.io/asset/uploads/1701162850.png"
                   />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 w-full">
@@ -66,9 +66,9 @@ export default function CartsSection() {
                         -
                       </button>
                       <input
-                        type="text"
                         className="border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[73px] min-w-[60px] placeholder:text-gray-900 py-[15px]  text-center bg-transparent"
                         placeholder="1"
+                        type="text"
                       />
                       <button className="group rounded-r-xl px-5 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-gray-50 hover:border-gray-300 hover:shadow-gray-300 focus-within:outline-gray-300">
                         +
@@ -85,9 +85,9 @@ export default function CartsSection() {
               <div className="flex flex-col min-[500px]:flex-row min-[500px]:items-center gap-5 py-6  border-b border-gray-200 group">
                 <div className="w-full md:max-w-[126px]">
                   <img
-                    src="https://pagedone.io/asset/uploads/1701162866.png"
                     alt="perfume bottle image"
                     className="mx-auto rounded-xl object-cover"
+                    src="https://pagedone.io/asset/uploads/1701162866.png"
                   />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 w-full">
@@ -110,9 +110,9 @@ export default function CartsSection() {
                         -
                       </button>
                       <input
-                        type="text"
                         className="border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[73px] min-w-[60px] placeholder:text-gray-900 py-[15px]  text-center bg-transparent"
                         placeholder="2"
+                        type="text"
                       />
                       <button className="group rounded-r-xl px-5 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-gray-50 hover:border-gray-300 hover:shadow-gray-300 focus-within:outline-gray-300">
                         +
@@ -129,9 +129,9 @@ export default function CartsSection() {
               <div className="flex flex-col min-[500px]:flex-row min-[500px]:items-center gap-5 py-6  border-b border-gray-200 group">
                 <div className="w-full md:max-w-[126px]">
                   <img
-                    src="https://pagedone.io/asset/uploads/1701162880.png"
                     alt="perfume bottle image"
                     className="mx-auto rounded-xl object-cover"
+                    src="https://pagedone.io/asset/uploads/1701162880.png"
                   />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 w-full">
@@ -154,9 +154,9 @@ export default function CartsSection() {
                         -
                       </button>
                       <input
-                        type="text"
                         className="border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[73px] min-w-[60px] placeholder:text-gray-900 py-[15px]  text-center bg-transparent"
                         placeholder="1"
+                        type="text"
                       />
                       <button className="group rounded-r-xl px-5 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-gray-50 hover:border-gray-300 hover:shadow-gray-300 focus-within:outline-gray-300">
                         +
@@ -181,14 +181,14 @@ export default function CartsSection() {
                   <h1>$84.00</h1>
                 </div>
               </div>
-              <h2 className="font-manrope font-bold text-3xl leading-10 text-black pb-8 border-b border-gray-300"></h2>
+              <h2 className="font-manrope font-bold text-3xl leading-10 text-black pb-8 border-b border-gray-300" />
               <div className="mt-8">
                 <div className="flex justify-between">
                   <h1>Shipping:</h1>
                   <h1>Free</h1>
                 </div>
               </div>
-              <h2 className="font-manrope font-bold text-3xl leading-10 text-black pb-8 border-b border-gray-300"></h2>
+              <h2 className="font-manrope font-bold text-3xl leading-10 text-black pb-8 border-b border-gray-300" />
               <div className="mt-8">
                 <div className="flex justify-between">
                   <h1>Total:</h1>

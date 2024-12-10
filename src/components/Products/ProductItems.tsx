@@ -80,9 +80,9 @@ export default function ProductItems() {
                 <Image
                   alt="Card background"
                   className="w-full object-cover rounded-xl  max-sm:w-full"
+                  height={100}
                   src={card?.imageUrl}
                   width={500}
-                  height={100}
                 />
                 <CardBody>
                   <div className="flex justify-between">

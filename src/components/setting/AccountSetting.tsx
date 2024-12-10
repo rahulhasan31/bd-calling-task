@@ -23,9 +23,9 @@ const AccountSettings = () => {
               First Name
             </label>
             <input
-              type="text"
-              placeholder="Dianne"
               className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              placeholder="Dianne"
+              type="text"
             />
           </div>
 
@@ -34,9 +34,9 @@ const AccountSettings = () => {
               Last Name
             </label>
             <input
-              type="text"
-              placeholder="Russell"
               className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              placeholder="Russell"
+              type="text"
             />
           </div>
 
@@ -45,9 +45,9 @@ const AccountSettings = () => {
               Email
             </label>
             <input
-              type="email"
-              placeholder="dianne.russell@gmail.com"
               className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              placeholder="dianne.russell@gmail.com"
+              type="email"
             />
           </div>
 
@@ -56,9 +56,9 @@ const AccountSettings = () => {
               Phone Number
             </label>
             <input
-              type="tel"
-              placeholder="(603) 555-0123"
               className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              placeholder="(603) 555-0123"
+              type="tel"
             />
           </div>
 
@@ -71,18 +71,18 @@ const AccountSettings = () => {
         <div className="flex flex-col items-center lg:relative lg:-top-14">
           <div className="w-60 h-60 rounded-full overflow-hidden border">
             <Image
-              width={500}
-              height={500}
-              src={image}
               alt="Profile"
               className="w-full h-full object-cover"
+              height={500}
+              src={image}
+              width={500}
             />
           </div>
           <label className="mt-4 cursor-pointer bg-white text-orange-500 border-2 border-orange-500 font-semibold px-4 py-2 rounded-md hover:bg-orange-100 transition duration-200">
             Choose Image
             <input
-              type="file"
               className="hidden"
+              type="file"
               onChange={handleImageChange}
             />
           </label>

@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import FXInput from "../forms/FXInput";
-import { SearchIcon } from "../icons";
 import { Input } from "@nextui-org/input";
-import { IoLocationOutline } from "react-icons/io5";
+
+import { SearchIcon } from "../icons";
 
 //this is added search menu
 export const searchInput = (
@@ -13,15 +12,15 @@ export const searchInput = (
       inputWrapper: "bg-default-100",
       input: "text-lg",
     }}
+    endContent={
+      <SearchIcon className="text-base   pointer-events-none flex-shrink-0" />
+    }
+    labelPlacement="outside"
+    placeholder="Search..."
     startContent={
       <button className=" items-center text-default-100 font-semibold rounded-s-full relative right-4 lg:inline-block bg-green-500 py-2 px-3  ">
         Location
       </button>
-    }
-    labelPlacement="outside"
-    placeholder="Search..."
-    endContent={
-      <SearchIcon className="text-base   pointer-events-none flex-shrink-0" />
     }
     type="search"
   />
@@ -49,17 +48,17 @@ export default function Brenner() {
 
       <div className=" inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute lg:-top-28 lg:h-[500px] xl:px-0">
         <Image
-          width={500}
-          height={500}
-          className=" object-cover rounded  lg:rounded-none lg:shadow-none lg:h-full"
-          src="/c.png"
           alt=""
+          className=" object-cover rounded  lg:rounded-none lg:shadow-none lg:h-full"
+          height={500}
+          src="/c.png"
+          width={500}
         />
       </div>
       <div>
         <img
-          className="lg:-top-12 lg:left-48 absolute w-[580px] "
           alt="img"
+          className="lg:-top-12 lg:left-48 absolute w-[580px] "
           src="/q.png"
         />
       </div>

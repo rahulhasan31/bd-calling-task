@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import { IInput } from "../../../types";
 import { Input } from "@nextui-org/input";
+
+import { IInput } from "../../../types";
 
 interface IProps extends IInput {}
 const FXInput = ({
@@ -16,12 +17,12 @@ const FXInput = ({
   return (
     <Input
       className={className}
-      variant={variant}
-      size={size}
-      required={required}
       label={label}
-      type={type}
       name={name}
+      required={required}
+      size={size}
+      type={type}
+      variant={variant}
     />
   );
 };

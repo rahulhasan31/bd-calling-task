@@ -1,5 +1,4 @@
 "use client";
-import { NavbarMenuToggle } from "@nextui-org/navbar";
 import Link from "next/link";
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
@@ -45,8 +44,8 @@ export default function Sidebar() {
           </div>
           <div className="p-4">
             <button
-              type="button"
               className="inline-flex items-center justify-center h-9 px-4 rounded-xl bg-gray-900 text-gray-300 hover:text-white text-sm font-semibold transition"
+              type="button"
             >
               Logout
             </button>

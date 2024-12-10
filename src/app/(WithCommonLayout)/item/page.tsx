@@ -1,6 +1,7 @@
-import Items, { ItemData } from "@/components/Items/Items";
-import ProductItems from "@/components/Products/ProductItems";
 import React from "react";
+
+import { ItemData } from "@/components/Items/Items";
+import ProductItems from "@/components/Products/ProductItems";
 
 export default function ShopItems() {
   return (
