@@ -3,7 +3,7 @@ import React from "react";
 
 export default function BrannerTwo() {
   return (
-    <div className="lg:flex gap-5 lg:justify-center bg-gradient-to-b bg-default-100 shadow-lg p-7">
+    <div className="lg:flex lg:w-[90%] lg:mx-auto gap-5 lg:justify-center bg-gradient-to-b bg-default-100 shadow-lg p-7">
       <div className="flex flex-col lg:flex-row gap-3 items-center text-center lg:text-left">
         <Image
           alt="Discount Icon"

@@ -15,8 +15,9 @@ import { LuUserRound } from "react-icons/lu";
 import Link from "next/link";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
+
 import { GithubIcon, SearchIcon } from "@/components/icons";
+import NavbarDropdown from "./NavbarDropdown";
 
 export const Navbar = () => {
   const searchInput = (
@@ -67,10 +68,11 @@ export const Navbar = () => {
               </Link>
             </NavbarItem>
           ))}
+          <NavbarItem className="hidden sm:flex gap-2">
+            <NavbarDropdown />
+          </NavbarItem>
         </ul>
-        <NavbarItem className="hidden sm:flex gap-2">
-          <ThemeSwitch />
-        </NavbarItem>
+
         <NavbarItem className="hidden sm:flex gap-2">
           <Link color="foreground" href="/cart">
             <FaCartPlus className="text-xl me-2" />
