@@ -100,62 +100,62 @@ export const data = [
 export default function TopRestaurant() {
   return (
     <>
-      <Link href={"/restaurant/9279"}>
-        <div className="mt-5">
-          <div>
-            <h1 className="text-4xl font-bold">
-              Explore{" "}
-              <small className="text-4xl text-orange-500">
-                Top Restaurants
-              </small>
-            </h1>
-            <h4 className="text-2xl">Check your city Near by Restaurant</h4>
-          </div>
-
-          <div className="grid grid-cols-3 gap-5 border-collapse mt-5 max-sm:grid-cols-1">
-            {data?.slice(0, 3).map((card: any) => (
-              <div key={card?.id}>
-                <Card className="py-4">
-                  <CardBody className="">
-                    <Image
-                      alt="Card background"
-                      className="object-cover rounded-xl max-sm:w-full"
-                      height={100}
-                      src={card?.imageUrl}
-                      width={1000}
-                    />
-                  </CardBody>
-                  <CardBody className="">
-                    <div className="flex justify-between">
-                      <p className=" uppercase font-bold text-2xl">
-                        {card?.name}
-                      </p>
-                      <div className="flex items-center">
-                        <FaStar className="text-yellow-400" /> (4.5)
-                      </div>
-                    </div>
-
-                    <small className="text-default-500 text-md flex items-center gap-2">
-                      <CiLocationOn />
-                      {card?.address}
-                    </small>
-                    <h4 className="text-default-500 text-tiny mt-2">
-                      {card?.description}
-                    </h4>
-
-                    <Button
-                      className="mt-2 text-white bg-green-500"
-                      variant="shadow"
-                    >
-                      Visit
-                    </Button>
-                  </CardBody>
-                </Card>
-              </div>
-            ))}
-          </div>
+      <div className="mt-5">
+        <div>
+          <h1 className="text-4xl font-bold">
+            Explore{" "}
+            <small className="text-4xl text-orange-500">Top Restaurants</small>
+          </h1>
+          <h4 className="text-2xl">Check your city Near by Restaurant</h4>
         </div>
-      </Link>
+
+        <div className="grid grid-cols-3 gap-5 border-collapse mt-5 max-sm:grid-cols-1">
+          {data?.slice(0, 3).map((card: any) => (
+            <div key={card?.id}>
+              <Card className="py-4">
+                <CardBody className="">
+                  <Image
+                    alt="Card background"
+                    className="object-cover rounded-xl max-sm:w-full"
+                    height={100}
+                    src={card?.imageUrl}
+                    width={1000}
+                  />
+                </CardBody>
+                <CardBody className="">
+                  <div className="flex justify-between">
+                    <p className=" uppercase font-bold text-2xl">
+                      {card?.name}
+                    </p>
+                    <div className="flex items-center">
+                      <FaStar className="text-yellow-400" /> (4.5)
+                    </div>
+                  </div>
+
+                  <small className="text-default-500 text-md flex items-center gap-2">
+                    <CiLocationOn />
+                    {card?.address}
+                  </small>
+                  <h4 className="text-default-500 text-tiny mt-2">
+                    {card?.description}
+                  </h4>
+
+                  <div className="">
+                    <Link href={"/restaurant/9279"}>
+                      <Button
+                        className="mt-2 w-full text-white bg-green-500"
+                        variant="shadow"
+                      >
+                        Visit
+                      </Button>
+                    </Link>
+                  </div>
+                </CardBody>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 }

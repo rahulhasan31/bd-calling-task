@@ -44,16 +44,21 @@ export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
+        <NavbarBrand as="li" className="gap-3 lg:max-w-fit">
           <Link className="flex justify-start items-center gap-1" href="/" />
           <div>
-            <img alt="img" className="h-10" src="/i.png" />
+            <img
+              alt="img"
+              className="lg:h-10 max-sm:w-4 max-sm:rounded-full max-sm:h-3"
+              src="/i.png"
+            />
           </div>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full">
           <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         </NavbarContent>
-        <ul className="hidden lg:flex gap-4 justify-start ml-2">
+
+        <ul className="max-sm:flex lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link
@@ -68,7 +73,7 @@ export const Navbar = () => {
               </Link>
             </NavbarItem>
           ))}
-          <NavbarItem className="hidden sm:flex gap-2">
+          <NavbarItem className=" sm:flex gap-2">
             <NavbarDropdown />
           </NavbarItem>
         </ul>
@@ -83,27 +88,7 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
-        {searchInput}
-        <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
-              >
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
-        </div>
-      </NavbarMenu>
+      <NavbarMenu>{searchInput}</NavbarMenu>
     </NextUINavbar>
   );
 };

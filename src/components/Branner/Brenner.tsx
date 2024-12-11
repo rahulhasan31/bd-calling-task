@@ -43,7 +43,7 @@ export default function Brenner() {
           </p>
         </div>
 
-        <div className="w-96">{searchInput}</div>
+        <div className="lg:w-96">{searchInput}</div>
       </div>
 
       <div className=" inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute lg:-top-28 lg:h-[500px] xl:px-0">

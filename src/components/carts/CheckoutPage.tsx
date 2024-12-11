@@ -114,7 +114,7 @@ export default function CheckoutForm() {
           </div>
           <div className="relative col-span-full flex flex-col py-6 pl-8 pr-4 sm:py-12 lg:col-span-4 lg:top-10 lg:py-24 lg:right-10">
             <div>
-              <div className="absolute p-5 inset-0 h-[90%] w-full bg-white opacity-95">
+              <div className="absolute p-5 inset-0 lg:h-[90%] w-full bg-white opacity-95">
                 <div className="relative">
                   <h1 className="text-2xl font-bold mb-2">Order Summary</h1>
                   <ul className="space-y-5">
